@@ -1,0 +1,30 @@
+.voidList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+    padding: 4rem 1.5rem;
+    max-width: 46rem;
+    max-height: 15.25rem;
+}
+
+.voidList article {
+    display: grid;
+    grid-column: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+    font-size: 1rem;
+}
+
+.voidList article p:first-child {
+    font-weight: bold;
+}
+
+.clipboard {
+    display: flex;
+    justify-content: center;
+}

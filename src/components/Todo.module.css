@@ -1,0 +1,40 @@
+.task {
+  background: var(--gray-500);
+  color: var(--gray-100);
+
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+
+  display: flex;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.task button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 4px;
+}
+
+.task button:hover {
+  color: var(--gray-100);
+}
+
+.taskBox {
+  flex: 1;
+}
+
+.taskContent main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.taskContent main p {
+  font-size: 0.875rem;
+}

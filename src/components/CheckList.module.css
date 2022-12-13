@@ -1,0 +1,97 @@
+.searchForm {
+    display: flex;
+    justify-content: center;
+
+    margin-top: calc(0px - 1.6875rem - 1px);
+    margin-bottom: 4rem;
+}
+
+.searchForm input {
+    background: var(--gray-500);
+    color: var(--gray-300);
+
+    border: 2px solid var(--gray-700);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-right: 0.5rem;
+
+    line-height: 1.375;
+    font-size: 1rem;
+    width: 39.875rem;
+}
+
+.searchForm button[type=submit] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    background: var(--blue-600);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 0.875rem;
+    cursor: pointer;
+
+    border: 0;
+    border-radius: 8px;
+    padding: 1rem;
+
+    transition: background-color 0.1s;
+    width: 5.625rem;
+}
+
+.searchForm button[type=submit]:not(:disabled):hover {
+    background: var(--blue-400);
+}
+
+.searchForm button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.plusCircle {
+    min-height: 1rem;
+    min-width: 1rem;
+}
+
+/* ABAIXO DA BARRA DE PESQUISA */
+
+.taskList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkList {
+    border-radius: 8px;
+    width: 46rem;
+}
+
+.checkList>header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    font-size: 0.875rem;
+}
+
+.checkList>header strong {
+    margin-right: 0.5rem;
+    font-size: 1.0625;
+}
+
+.checkListTitle {
+    color: var(--blue-400);
+}
+
+.checkListTitle2 {
+    color: var(--purple-400);
+}
+
+
+.checkList>header span {
+    border-radius: 999px;
+    padding: 0.125rem 0.5rem;
+    background: var(--gray-400);
+    font-size: 0.75rem;
+}
