@@ -11,7 +11,6 @@ export function App() {
       <div className={styles.principalContent}>
         <CheckList />
       </div>
-
     </div>
   );
 }

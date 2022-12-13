@@ -2,7 +2,6 @@ import { Circle, CheckCircle } from "phosphor-react";
 import styles from "./CheckBox.module.css";
 
 export const Checkbox = ({ value, onChange }) => {
-
   return (
     <label>
       <input type="checkbox" checked={value} onChange={onChange} />
