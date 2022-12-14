@@ -11,12 +11,10 @@ export function CheckList() {
     {
       id: uuidv4(),
       content: "Terminar o desafio",
-      isComplete: false,
     },
     {
       id: uuidv4(),
       content: "Importar projeto no Git",
-      isComplete: false,
     },
   ]);
 
@@ -53,7 +51,7 @@ export function CheckList() {
     event.target.setCustomValidity("Esse Campo é obrigatório!");
   }
 
-  function markTask(taskToMark, isMarked) {
+  function markTask(isMarked) {
     const addMarkedTaskCount = markedTaskCount + 1;
     const removeMarkedTaskCount = markedTaskCount - 1;
 
@@ -66,14 +64,15 @@ export function CheckList() {
 
   function deleteTask(taskToDelete, isMarked) {
     const removeMarkedTaskCount = markedTaskCount - 1;
-
     const tasksWithoutDeletedOne = tasks.filter((task) => {
       return task.id != taskToDelete;
     });
 
-    setTasks(tasksWithoutDeletedOne);
-    if (markedTaskCount > 0 && isMarked === "true") {
+    if (isMarked === "false") {
       setMarkedTaskCount(removeMarkedTaskCount);
+      setTasks(tasksWithoutDeletedOne);
+    } else {
+      setTasks(tasksWithoutDeletedOne);
     }
   }
 
@@ -97,12 +96,11 @@ export function CheckList() {
           required
         />
 
-        <button type="submit">
+        <button type="submit" disabled={isNewTaskEmpty}>
           Criar
           <PlusCircle
             size={16}
             className={styles.plusCircle}
-            disabled={isNewTaskEmpty}
           />
         </button>
       </form>

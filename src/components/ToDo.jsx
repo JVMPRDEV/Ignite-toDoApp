@@ -9,7 +9,7 @@ export function ToDo({ id, content, onDeleteTask, onMarkTask }) {
 
   const handleChange = () => {
     setChecked(!checked);
-    onMarkTask(id, currentBox);
+    onMarkTask(currentBox);
   };
 
   function handleDeleteTask() {
