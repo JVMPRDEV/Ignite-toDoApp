@@ -2,7 +2,7 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { PlusCircle } from "phosphor-react";
 import { VoidList } from "./VoidList";
-import { ToDo } from "./toDo";
+import { ToDo } from "./ToDo";
 
 import styles from "./CheckList.module.css";
 
@@ -34,7 +34,6 @@ export function CheckList() {
       {
         id: uuidv4(),
         content: newTaskText,
-        isComplete: false,
       },
     ]);
 
