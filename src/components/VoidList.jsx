@@ -9,7 +9,7 @@ export function VoidList() {
         <div className={styles.clipboard}>
           <img src={clipBoard} alt="icone de prancheta" />
         </div>
-        <div>
+        <div className={styles.voidMessage}>
           <p>Você ainda não tem tarefas cadastradas</p>
           <p>Crie tarefas e organize seus itens a fazer</p>
         </div>

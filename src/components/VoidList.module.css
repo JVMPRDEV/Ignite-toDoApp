@@ -27,4 +27,9 @@
 .clipboard {
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+.voidMessage {
+    text-align: center;
 }
