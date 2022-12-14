@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { PlusCircle } from "phosphor-react";
-
-import styles from "./CheckList.module.css";
 import { VoidList } from "./VoidList";
 import { ToDo } from "./toDo";
+
+import styles from "./CheckList.module.css";
 
 export function CheckList() {
   const [tasks, setTasks] = useState([

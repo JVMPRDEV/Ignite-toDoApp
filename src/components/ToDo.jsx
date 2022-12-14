@@ -1,7 +1,8 @@
-import { Trash } from "phosphor-react";
-import styles from "./ToDo.module.css";
-import { Checkbox } from "./CheckBox";
 import { useState } from "react";
+import { Trash } from "phosphor-react";
+import { Checkbox } from "./CheckBox";
+
+import styles from "./ToDo.module.css";
 
 export function ToDo({ id, content, onDeleteTask, onMarkTask }) {
   const [checked, setChecked] = useState(false);
